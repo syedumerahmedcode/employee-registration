@@ -8,4 +8,7 @@ For this project, the following dependencies are added:
 
 Inside employee-registration/WebContent ---> We contain jsp pages or css files.
 
+Packages are modeled after MVC pattern i.e. Model,View and Controller. View folder is created under Web-inf folder which, in this case, contains JSP pages but it can be any other front-end technology.
+
+
  
