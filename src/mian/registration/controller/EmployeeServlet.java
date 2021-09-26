@@ -18,56 +18,74 @@ import mian.registration.model.Employee;
  */
 @WebServlet("/register")
 public class EmployeeServlet extends HttpServlet {
+	private static final String BASE_PATH_NAME = "WEB-INF/views/";
+	private static final String EMPLOYEEREGISTER = BASE_PATH_NAME + "employeeregister.jsp";
+	private static final String EMPLOYEEDETAILS = BASE_PATH_NAME + "employeedetails.jsp";
+
 	private static final long serialVersionUID = 1L;
-	
-	private EmployeeDao employeeDao=new EmployeeDao();
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public EmployeeServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+
+	private EmployeeDao employeeDao = new EmployeeDao();
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		RequestDispatcher dispatcher=request.getRequestDispatcher("WEB-INF/views/employeeregister.jsp");
-		dispatcher.forward(request, response);
+	public EmployeeServlet() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		handleRequestViaRequestDispatcher(request, response, EMPLOYEEREGISTER);
+	}
 
-		String firstName=request.getParameter("firstName");
-		String lastName=request.getParameter("lastName");
-		String username=request.getParameter("username");
-		String password=request.getParameter("password");
-		String address=request.getParameter("address");
-		String contact=request.getParameter("contact");
-		
-		Employee employee=new Employee();
-		employee.setFirstName(firstName);
-		employee.setLastName(lastName);
-		employee.setUsername(username);
-		employee.setPassword(password);
-		employee.setAddress(address);
-		employee.setContact(contact);
-		
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		String firstName = request.getParameter("firstName");
+		String lastName = request.getParameter("lastName");
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		String address = request.getParameter("address");
+		String contact = request.getParameter("contact");
+
+		Employee employee = createEmployee(firstName, lastName, username, password, address, contact);
+
 		try {
 			employeeDao.registerEmployee(employee);
 		} catch (ClassNotFoundException | EmployeeRegistrationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		RequestDispatcher dispatcher=request.getRequestDispatcher("WEB-INF/views/employeedetails.jsp");
+		handleRequestViaRequestDispatcher(request, response, EMPLOYEEDETAILS);
+
+	}
+
+	private void handleRequestViaRequestDispatcher(HttpServletRequest request, HttpServletResponse response,
+			String pathNameToTheResource) throws ServletException, IOException {
+		RequestDispatcher dispatcher = request.getRequestDispatcher(pathNameToTheResource);
 		dispatcher.forward(request, response);
-		
+	}
+
+	private Employee createEmployee(String firstName, String lastName, String username, String password, String address,
+			String contact) {
+		Employee employee = new Employee();
+		employee.setFirstName(firstName);
+		employee.setLastName(lastName);
+		employee.setUsername(username);
+		employee.setPassword(password);
+		employee.setAddress(address);
+		employee.setContact(contact);
+		return employee;
 	}
 
 }
