@@ -16,7 +16,12 @@ For this project, the following dependencies are added:
 
 - In order to change the default port 8080 to something else, one can go to c:// Program Files/Apache Software Foundation/Tomcat 8.0/conf/server.xml. Theses settings are provided for Windows. For Linux, please check it yourself.
 
-- For the project, one also needs to configure Buildpath and add Apache Tomcat Server as a library. 
+- For the project, one also needs to configure Buildpath and add Apache Tomcat Server as a library.
+
+- The context path end point in form action (in jsp) is what is entered in the @WebServlet annotation in the servlet class as this bindings acts as the bridge between these two.
+
+- The input field name in html fields is what we are getting as part of the HttpServletRequest in the doPost() method with the Servlet class.   
+  
 
 Video reference: 
 - [1](https://www.youtube.com/watch?v=DzYyzmP4m5c):  Registration Form using JSP + Servlet + JDBC + MySQL Database Example
