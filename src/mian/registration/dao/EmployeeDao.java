@@ -11,9 +11,10 @@ import mian.registration.model.Employee;
 public class EmployeeDao {
 
 	private static final String MYSQL_JDBC_DRIVER_CLASSNAME = "com.mysql.jdbc.Driver";
-	private static final String USER = "root";
-	private static final String PASSWORD = "root";
-	private static final String JDBC_URL = "jdbc:mysql://localhost:3306/mysql_database?useSSL=false";
+	private static final String USER = "padmin";
+	private static final String PASSWORD = "Windo@1234";
+	private static final String DATABASE_NAME="employees";
+	private static final String JDBC_URL = "jdbc:mysql://localhost:3306/"+DATABASE_NAME+"?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
 	/**
 	 * Insert statement is written in native sql. Have a look at the firstName and
 	 * lastName columns ---> They match the column names in the table of the
@@ -31,6 +32,9 @@ public class EmployeeDao {
 
 			// Step 2: Create a statement using connection object
 			PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
+			/**
+			 * The id should be entered dynamically or auto generated.
+			 */
 			preparedStatement.setInt(1, 1);
 			preparedStatement.setString(2, employee.getFirstName());
 			preparedStatement.setString(3, employee.getLastName());
