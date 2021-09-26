@@ -8,6 +8,7 @@
 - [Explanation System Design](#explanation-system-design)
 - [Explanation Other important Points](#explanation-other-important-points)
 - [Technologies Used](#technologies-used)
+- [Prerequisities](#prerequisities)
 - [Commands](#commands)
 - [Contact Information](#contact-information)
 
@@ -52,6 +53,10 @@ To be defined.
 
 
 ## Commands
+
+To be defined.
+
+## prerequisities
 
 To be defined.
  
