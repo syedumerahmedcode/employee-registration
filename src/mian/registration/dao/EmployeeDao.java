@@ -5,11 +5,12 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import main.registration.exception.EmployeeRegistrationException;
 import mian.registration.model.Employee;
 
 public class EmployeeDao {
 
-	public int registerEmployee(Employee employee) throws ClassNotFoundException {
+	public int registerEmployee(Employee employee) throws ClassNotFoundException, EmployeeRegistrationException {
 		/**
 		 * Insert statement is written in native sql. 
 		 * Have a look at the firstName and lastName columns
@@ -41,6 +42,7 @@ public class EmployeeDao {
 			
 		}catch (SQLException ex) {
 			ex.printStackTrace();
+			throw new EmployeeRegistrationException();
 		}
 		return result;
 	}
