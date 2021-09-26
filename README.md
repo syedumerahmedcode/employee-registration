@@ -15,11 +15,11 @@
 
 ## Introduction
 
-This project contains an application for employee registration which uses JavaEE and uses DAO pattern to register  information of the employee in the database. The main focus of the project is understand and use DAO pattern with JavaEE ecosystem.      
+This project contains an application for employee registration which uses JavaEE and uses DAO pattern to register  information of the employee in the database. The main focus of the project is understand and use DAO pattern with JavaEE eco system.      
 
 ## Out Of Scope
 
-To be defined. 
+Since the idea of this project is to understand the DAO pattern, not much focus is given to front-end and just simple JSP pages is used. Similarly, no tests are written.  
 
 
 ## Explanation DAO Pattern
