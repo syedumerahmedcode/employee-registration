@@ -12,7 +12,12 @@ For this project, the following dependencies are added:
 
 - Inside Controller package, we create servlets.
 
+- Apache Tomcat server should be configured to the class path of this project.
 
+
+Video reference: 
+- [1](https://www.youtube.com/watch?v=DzYyzmP4m5c):  Registration Form using JSP + Servlet + JDBC + MySQL Database Example
+- [2](https://www.youtube.com/watch?v=kLgquZ2FiuQ): Install and Configure Apache Tomcat Web Server in Eclipse IDE
 
 
 
