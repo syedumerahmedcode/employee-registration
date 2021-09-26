@@ -7,12 +7,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import main.registration.exception.EmployeeRegistrationException;
+import mian.registration.dao.EmployeeDao;
+import mian.registration.model.Employee;
+
 /**
  * Servlet implementation class EmployeeServlet
  */
-@WebServlet("/EmployeeServlet")
+@WebServlet("/register")
 public class EmployeeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	private EmployeeDao employeeDao=new EmployeeDao();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -34,8 +40,30 @@ public class EmployeeServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+
+		String firstName=request.getParameter("firstName");
+		String lastName=request.getParameter("lastName");
+		String username=request.getParameter("username");
+		String password=request.getParameter("password");
+		String address=request.getParameter("address");
+		String contact=request.getParameter("contact");
+		
+		Employee employee=new Employee();
+		employee.setFirstName(firstName);
+		employee.setLastName(lastName);
+		employee.setUsername(username);
+		employee.setPassword(password);
+		employee.setAddress(address);
+		employee.setContact(contact);
+		
+		try {
+			employeeDao.registerEmployee(employee);
+		} catch (ClassNotFoundException | EmployeeRegistrationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		response.sendRedirect("");
+		
 	}
 
 }
