@@ -18,9 +18,19 @@ import mian.registration.model.Employee;
  */
 @WebServlet("/register")
 public class EmployeeServlet extends HttpServlet {
+	
 	private static final String BASE_PATH_NAME = "WEB-INF/views/";
 	private static final String EMPLOYEEREGISTER = BASE_PATH_NAME + "employeeregister.jsp";
 	private static final String EMPLOYEEDETAILS = BASE_PATH_NAME + "employeedetails.jsp";
+	/**
+	 * These properties must match the value given in HTML as the input field name.
+	 */
+	private static final String CONTACT = "contact";
+	private static final String ADDRESS = "address";
+	private static final String PASSWORD = "password";
+	private static final String USERNAME = "username";
+	private static final String LAST_NAME = "lastName";
+	private static final String FIRST_NAME = "firstName";
 
 	private static final long serialVersionUID = 1L;
 
@@ -51,12 +61,12 @@ public class EmployeeServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String firstName = request.getParameter("firstName");
-		String lastName = request.getParameter("lastName");
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		String address = request.getParameter("address");
-		String contact = request.getParameter("contact");
+		String firstName = request.getParameter(FIRST_NAME);
+		String lastName = request.getParameter(LAST_NAME);
+		String username = request.getParameter(USERNAME);
+		String password = request.getParameter(PASSWORD);
+		String address = request.getParameter(ADDRESS);
+		String contact = request.getParameter(CONTACT);
 
 		Employee employee = createEmployee(firstName, lastName, username, password, address, contact);
 
