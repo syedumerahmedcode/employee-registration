@@ -15,11 +15,11 @@
 
 ## Introduction
 
-To be defined.
+This project contains an application for employee registration which uses JavaEE and uses DAO pattern to register  information of the employee in the database. The main focus of the project is understand and use DAO pattern with JavaEE ecosystem.      
 
 ## Out Of Scope
 
-To be defined.
+To be defined. 
 
 
 ## Explanation DAO Pattern
