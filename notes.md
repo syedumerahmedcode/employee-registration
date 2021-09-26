@@ -14,6 +14,9 @@ For this project, the following dependencies are added:
 
 - Apache Tomcat server should be configured to the class path of this project.
 
+- In order to change the default port 8080 to something else, one can go to c:// Program Files/Apache Software Foundation/Tomcat 8.0/conf/server.xml. Theses settings are provided for Windows. For Linux, please check it yourself.
+
+- For the project, one also needs to configure Buildpath and add Apache Tomcat Server as a library. 
 
 Video reference: 
 - [1](https://www.youtube.com/watch?v=DzYyzmP4m5c):  Registration Form using JSP + Servlet + JDBC + MySQL Database Example
