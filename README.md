@@ -10,6 +10,7 @@
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
 - [Commands](#commands)
+- [References](#references)
 - [Contact Information](#contact-information)
 
 
@@ -59,7 +60,12 @@ To be defined.
 ## prerequisities
 
 To be defined.
- 
+
+## references
+
+- [1](https://www.journaldev.com/16813/dao-design-pattern): DAO design pattern
+
+
 
 ## Contact Information
 
