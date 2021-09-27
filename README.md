@@ -59,7 +59,7 @@ PRIMARY KEY (`id`)
 
 This project uses Model Value Controller(MVC) pattern which is defined in the following diagram:
 
-![ModelViewController](https://github.com/syedumerahmedcode/prefix/blob/master/helpful-resources/ModelViewController.jpeg)
+![ModelViewController](https://github.com/syedumerahmedcode/employee-registration/blob/master/helpful-resources/ModelViewController.jpeg)
 
 
 !!!In progress!!!
