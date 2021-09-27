@@ -62,9 +62,29 @@ To be defined.
  
 ## Explanation Other Important Points
 
+- Inside employee-registration/WebContent/WEB-INF/lib folder --->we enter other required dependencies which are jar files.
+For this project, the following dependencies are added:
 
-To be defined.
- 
+* jsp-api-2.2jar
+* jstl-1.2.jar
+* mysql-connector-java-8.0.13.jar
+* servlet-api-2.5.jar
+
+- Inside employee-registration/WebContent ---> We contain jsp pages or css files.
+
+- Packages are modeled after MVC pattern i.e. Model,View and Controller. View folder is created under Web-inf folder which, in this case, contains JSP pages but it can be any other front-end technology.
+
+- Inside Controller package, we create servlets.
+
+- Apache Tomcat server should be configured to the class path of this project.
+
+- In order to change the default port 8080 to something else, one can go to c:// Program Files/Apache Software Foundation/Tomcat 8.0/conf/server.xml. Theses settings are provided for Windows. For Linux, please check it yourself.
+
+- For the project, one also needs to configure Buildpath and add Apache Tomcat Server as a library.
+
+- The context path end point in form action (in jsp) is what is entered in the @WebServlet annotation in the servlet class as this bindings acts as the bridge between these two.
+
+- The input field name in html fields is what we are getting as part of the HttpServletRequest in the doPost() method with the Servlet class.    
  
 
 
