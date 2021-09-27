@@ -92,8 +92,8 @@ For this project, the following dependencies are added:
 ## Technologies Used
 
 - Java 11
-- JavaEE---> To be defined.
-- Tomcat---> To be defined.
+- [JavaEE](https://www.oracle.com/java/technologies/java-ee-glance.html): Java Platform, Enterprise Edition (Java EE) is the standard in community-driven enterprise software. Java EE is developed using the Java Community Process, with contributions from industry experts, commercial and open source organizations, Java User Groups, and countless individuals. Each release integrates new features that align with industry needs, improves application portability, and increases developer productivity.
+- [Tomcat](https://tomcat.apache.org/): The Apache Tomcat® software is an open source implementation of the Jakarta Servlet, Jakarta Server Pages, Jakarta Expression Language, Jakarta WebSocket, Jakarta Annotations and Jakarta Authentication specifications. These specifications are part of the Jakarta EE platform.
 
 
 ## Commands
