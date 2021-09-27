@@ -59,10 +59,28 @@ PRIMARY KEY (`id`)
 
 This project uses Model Value Controller(MVC) pattern which is defined in the following diagram:
 
-![ModelViewController](https://github.com/syedumerahmedcode/employee-registration/blob/master/helpful-resources/ModelViewController.jpeg)
+![ModelViewControllerOnWhiteboard](https://github.com/syedumerahmedcode/employee-registration/blob/master/helpful-resources/ModelViewController.jpeg)
+
+Model View Controller(MVC) is a pattern used in software engineering to separate the application logic from the user interface. It has three layers.
+
+Model: Defines the business layer of the application.
+Controller: Manages the flow of the application.
+View: Defines the presentation layer of the application.
+
+The development steps are as follows: 
+
+- MySql database setup
+- Create a Eclipse Dynamic Web project  
+- Add dependencies
+- Project Structure
+- Create a JavaBean - Employee.java
+- Create a EmployeeDao.java
+- Create a EmployeeDaoIpl.java
+- Create a EmployeeServlet.java
+- Create the front-end page - employeeregister.jsp
+- Create the front-end page - employeedetail.jsp
 
 
-!!!In progress!!!
  
 ## Explanation Other Important Points
 
