@@ -67,7 +67,7 @@ Model: Defines the business layer of the application.
 Controller: Manages the flow of the application.
 View: Defines the presentation layer of the application.
 
-The development steps are as follows: 
+The **development steps** are as follows: 
 
 - MySql database setup
 - Create a Eclipse Dynamic Web project  
