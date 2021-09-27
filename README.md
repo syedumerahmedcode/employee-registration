@@ -25,7 +25,16 @@ Since the idea of this project is to understand the DAO pattern, not much focus 
 
 ## Explanation DAO Pattern
 
-To be defined.
+DAO stands for Data Access Object. It is a structural pattern that allows us to isolate the business layer from the persistence layer using an abstract interface. 
+
+The advantage is that service layer is decoupled from the persistence layer and it has no idea how the low level data operations are performed i.e. it hides all the complexities involved in performing CRUD operations in the underlying storage mechanism. Due to this, both business and persistence layer can modified independent of each other.
+
+For Single responsibility principle (SRP), DAO is a must have, it separates the model and logic in a persistence layer that can be easily portable.
+
+If a project is using Test Unit then DAO helps to test it correctly (mockup, database testing and so on). 
+ 
+
+
  
 ## Explanation Database
 
@@ -57,11 +66,11 @@ To be defined.
 
 To be defined.
 
-## prerequisities
+## Prerequisities
 
 To be defined.
 
-## references
+## References
 
 - [1](https://www.journaldev.com/16813/dao-design-pattern): DAO design pattern
 
