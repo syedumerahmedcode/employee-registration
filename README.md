@@ -95,14 +95,29 @@ For this project, the following dependencies are added:
 - [JavaEE](https://www.oracle.com/java/technologies/java-ee-glance.html): Java Platform, Enterprise Edition (Java EE) is the standard in community-driven enterprise software. Java EE is developed using the Java Community Process, with contributions from industry experts, commercial and open source organizations, Java User Groups, and countless individuals. Each release integrates new features that align with industry needs, improves application portability, and increases developer productivity.
 - [Tomcat](https://tomcat.apache.org/): The Apache Tomcat® software is an open source implementation of the Jakarta Servlet, Jakarta Server Pages, Jakarta Expression Language, Jakarta WebSocket, Jakarta Annotations and Jakarta Authentication specifications. These specifications are part of the Jakarta EE platform.
 
-
-## Commands
-
-To be defined.
-
 ## Prerequisities
 
 This application requires the Tomcat server  and MySql database to be running on the target machine. 
+
+## Commands
+
+Inside Eclipse IDE, right click on Project ---> Runs As ---> Run on Server.
+This make the application available on: 
+
+```
+http://localhost:8080/employee-registration
+```
+
+Add _/register_ to access the register WebServlet.
+
+```
+http://localhost:8080/employee-registration/register
+```
+
+Once all the information is entered, click on 'Submit'. This creates an entry in the database.
+
+
+
 
 ## References
 
