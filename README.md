@@ -57,8 +57,12 @@ PRIMARY KEY (`id`)
 
 ## Explanation System Design
 
+This project uses Model Value Controller(MVC) pattern which is defined in the following diagram:
 
-To be defined.
+![ModelViewController](https://github.com/syedumerahmedcode/prefix/blob/master/helpful-resources/ModelViewController.jpeg)
+
+
+!!!In progress!!!
  
 ## Explanation Other Important Points
 
