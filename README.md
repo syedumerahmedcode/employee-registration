@@ -65,10 +65,10 @@ To be defined.
 - Inside employee-registration/WebContent/WEB-INF/lib folder --->we enter other required dependencies which are jar files.
 For this project, the following dependencies are added:
 
-* jsp-api-2.2jar
-* jstl-1.2.jar
-* mysql-connector-java-8.0.13.jar
-* servlet-api-2.5.jar
+** jsp-api-2.2jar
+** jstl-1.2.jar
+** mysql-connector-java-8.0.13.jar
+** servlet-api-2.5.jar
 
 - Inside employee-registration/WebContent ---> It contains jsp pages or css files.
 
@@ -102,7 +102,7 @@ To be defined.
 
 ## Prerequisities
 
-To be defined.
+This application requires the Tomcat server  and MySql database to be running on the target machine. 
 
 ## References
 
