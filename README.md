@@ -121,7 +121,7 @@ Once all the information is entered, click on 'Submit'. This creates an entry in
 
 ## References
 
-- [1](https://www.youtube.com/watch?v=DzYyzmP4m5c):  Registration Form using JSP + Servlet + JDBC + MySQL Database Example
+- [1](https://www.youtube.com/watch?v=DzYyzmP4m5c):  Registration Form using JSP + Servlet + JDBC + MySQL Database Example(Youtube)
 - [2](https://www.youtube.com/watch?v=kLgquZ2FiuQ): Install and Configure Apache Tomcat Web Server in Eclipse IDE
 - [3](https://www.journaldev.com/16813/dao-design-pattern): DAO design pattern
 
