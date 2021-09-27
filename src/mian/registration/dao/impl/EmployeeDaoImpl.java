@@ -1,4 +1,4 @@
-package mian.registration.dao;
+package mian.registration.dao.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import main.registration.exception.EmployeeRegistrationException;
+import mian.registration.dao.EmployeeDao;
 import mian.registration.model.Employee;
 
 public class EmployeeDaoImpl implements EmployeeDao{

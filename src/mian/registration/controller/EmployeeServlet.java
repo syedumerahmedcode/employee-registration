@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import main.registration.exception.EmployeeRegistrationException;
 import mian.registration.dao.EmployeeDao;
-import mian.registration.dao.EmployeeDaoImpl;
+import mian.registration.dao.impl.EmployeeDaoImpl;
 import mian.registration.model.Employee;
 
 /**
