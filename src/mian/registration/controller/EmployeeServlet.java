@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import main.registration.exception.EmployeeRegistrationException;
 import mian.registration.dao.EmployeeDao;
+import mian.registration.dao.EmployeeDaoImpl;
 import mian.registration.model.Employee;
 
 /**
@@ -34,7 +35,7 @@ public class EmployeeServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	private EmployeeDao employeeDao = new EmployeeDao();
+	private EmployeeDao employeeDao = new EmployeeDaoImpl();
 
 	/**
 	 * @see HttpServlet#HttpServlet()
