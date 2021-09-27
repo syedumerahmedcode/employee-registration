@@ -70,7 +70,7 @@ For this project, the following dependencies are added:
 * mysql-connector-java-8.0.13.jar
 * servlet-api-2.5.jar
 
-- Inside employee-registration/WebContent ---> We contain jsp pages or css files.
+- Inside employee-registration/WebContent ---> It contains jsp pages or css files.
 
 - Packages are modeled after MVC pattern i.e. Model,View and Controller. View folder is created under Web-inf folder which, in this case, contains JSP pages but it can be any other front-end technology.
 
