@@ -38,7 +38,21 @@ If a project is using Test Unit then DAO helps to test it correctly (mockup, dat
  
 ## Explanation Database
 
-To be defined.
+For database, MySql is used however, one can choose any other database. Since the focus is on understanding the dao pattern, one only table is created inside the database which keeps the records of the employees. The fields are: _id_, _first name_, _last name_, _username_, _password_, _address_ and _contact_. The primary key is _id_.
+
+```sql
+CREATE TABLE `employees`.`employee` (
+`id` int(3) NOT NULL,
+`first_name` varchar(20) DEFAULT NULL,
+`last_name` varchar(20) DEFAULT NULL,
+`username` varchar(250) DEFAULT NULL,
+`password` varchar(20) DEFAULT NULL,
+`address` varchar(45) DEFAULT NULL,
+`contact` varchar(45) DEFAULT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+```
+ 
  
 
 ## Explanation System Design
