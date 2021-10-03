@@ -10,6 +10,7 @@
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
 - [Commands](#commands)
+- [Contribution](#contribution)
 - [References](#references)
 - [Contact Information](#contact-information)
 
@@ -143,6 +144,9 @@ http://localhost:8080/employee-registration/register
 Once all the information is entered, click on 'Submit'. This creates an entry in the database.
 
 
+## Contribution
+
+Feature requests, issues, pull requests and questions are welcome.
 
 
 ## References
